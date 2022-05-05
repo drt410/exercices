@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* main.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,h2 {
+    font-style: italic;
+   }
+   h2 {
+    text-decoration: underline;
+   }
+   .rouge { color:red}
+   .vert { color:green}
+   .bleu { color:blue}
