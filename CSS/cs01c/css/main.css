@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* main.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    margin: 50px;
+    padding: 20px;
+    border: 2px solid red;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
