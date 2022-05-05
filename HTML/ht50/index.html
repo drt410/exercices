@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +8,48 @@
     <title>ht50</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <h1>ht50:questionnaire</h1>
     <form id="form" action="verif.php" method="post">
-    <p>
-        <label for="nom"></label>Nom<br>
-        <input type="text" name="nom" id="nom" value="Tran">
-    </p>
-    <p>
-        <label for="prenom"></label>Prénom<br>
-        <input type="text" name="prenom" id="prenom" value="Nicolas">
-    </p>
-    <p>
-        <label for="departement">Département de Résidence</label><br>
-        <select name="departement" id="departement">
-        <option value="ariege">Ariège</option>
-        <option value="aveyron">Aveyron</option>
-        <option value="haute_garonne">Haute-Garonne</option>
-        <option value="gers" selected="selected">Gers</option>
-        <option value="lot">Lot</option>
-        <option value="haute_pyrenees">Haute-Pyrénées</option>
-        <option value="tarn">Tarn</option>
-        <option value="tarn_et_garonne">Tarn et Garonne</option>
-        </select><br>
-    </p>
-    <p>J'aime<br>
-        <input name="biere" id="biere" type="checkbox"/>
-        <label for="biere">La bière</label><br/>
-        <input name="aligot" id="aligot" type="checkbox" checked="checked" />
-        <label for="aligot">L'aligot</label><br />
-        <input name="choucroute" id="choucroute" type="checkbox"/>
-        <label for="choucroute">La choucroute</label><br/>
-    </p>
-    <p>Je suis<br>
-        <input type="radio" name="genre" id="garcon" value="ga"checked ="checked">
-        <label for="garcon">Garçon</label>&nbsp;
-        <input type="radio" name="genre" id="fille">
-        <label for="fille">Fille</label>
-    </p>
-    
-    <input type="submit" value="Envoyer">&nbsp;<input type="reset" value="Réinitialiser">
+        <p>
+            <label for="nom"></label>Nom<br>
+            <input type="text" name="nom" id="nom" value="Tran">
+        </p>
+        <p>
+            <label for="prenom"></label>Prénom<br>
+            <input type="text" name="prenom" id="prenom" value="Nicolas">
+        </p>
+        <p>
+            <label for="departement">Département de Résidence</label><br>
+            <select name="departement" id="departement">
+                <option value="ariege">Ariège</option>
+                <option value="aveyron">Aveyron</option>
+                <option value="haute_garonne">Haute-Garonne</option>
+                <option value="gers" selected="selected">Gers</option>
+                <option value="lot">Lot</option>
+                <option value="haute_pyrenees">Haute-Pyrénées</option>
+                <option value="tarn">Tarn</option>
+                <option value="tarn_et_garonne">Tarn et Garonne</option>
+            </select><br>
+        </p>
+        <p>J'aime<br>
+            <input name="biere" id="biere" type="checkbox" />
+            <label for="biere">La bière</label><br />
+            <input name="aligot" id="aligot" type="checkbox" checked="checked" />
+            <label for="aligot">L'aligot</label><br />
+            <input name="choucroute" id="choucroute" type="checkbox" />
+            <label for="choucroute">La choucroute</label><br />
+        </p>
+        <p>Je suis<br>
+            <input type="radio" name="genre" id="garcon" value="ga" checked="checked">
+            <label for="garcon">Garçon</label>&nbsp;
+            <input type="radio" name="genre" id="fille">
+            <label for="fille">Fille</label>
+        </p>
+
+        <input type="submit" value="Envoyer">&nbsp;<input type="reset" value="Réinitialiser">
     </form>
 </body>
+
 </html>
