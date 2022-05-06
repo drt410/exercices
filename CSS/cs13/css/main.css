@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* main.css */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}
+
+/* -- visualisation des bordures de tableau -- */
+
+table,
+th,
+td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+/* -- espacement et alignement dans les cellules -- */
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* -- Entête en inverse grisé -- */
+
+th {
+    background-color: darkgrey;
+    color: white;
+}
+
+a {
+    color: gray;
+    font-weight: bold;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+.lorem {
+    color: gray;
+}
+
+.lorem:hover {
+    color: black;
+}
+
+.majuscule:first-letter {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.smiley::before{content: url(../img/smiley.png);}
