@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="ds">
+        <p> <label for="decompte">Saisissez une valeur entre 5 et 30</label></p>
+        <input type="text" name="decompte" id="decompte" minlength="5" maxlength="30">
+        <p><button type="button" onclick="start()">Submit</button></p>
+
+    </form>
+    <p id="ici"></p>
+    <script>
+        var num = 0;
+        var timer;
+        function start() {
+            num = document.getElementById("decompte").value;
+            timer = setInterval(updateDecompte, 1000);
+        }
+        function updateDecompte() {
+            document.getElementById("ici").innerHTML = num;
+            if (num == -1) {
+                document.getElementById("ici").innerHTML = "Décompte terminé";
+                clearInterval(timer);
+            }
+            num--;
+        }
+    </script>
+</body>
+<!-- <p id="ici"></p> -->
+<!-- <h1>Saisie en Javascript</h1> -->
+
+
+
+<!--     // function produit(a, b) {
+    // var resultat = a * b;
+    // return resultat;
+    // }
+
+    // document.write("<br>Résultat de 3x5 = " + produit(3, 5));
+
+    /* function addition(a, b) {
+    var resultat = a + b;
+    document.write("<br>Résultat de 2+5 = " + resultat);
+    }
+
+
+    function soustraction(a, b) {
+    var resultat = a - b;
+    return resultat;
+    }
+
+
+    function division(a, b) {
+    var resultat = a / b;
+    return resultat;
+    }
+
+
+    function multiplication(a, b) {
+    var resultat = a * b;
+    return resultat;
+    }
+
+    addition(2,5);
+    document.write("<br>Résultat de 3-1 = " + soustraction(3, 1));
+    document.write("<br>Résultat de 9/3 = " + division(9, 3));
+    document.write("<br>Résultat de 10x5 = " + multiplication(10, 5)); */ -->
+
+
+<!--     <form action="" id="ds">
+        <p> <label for="euro">Saisissez un montant en €</label></p>
+        <input type="text" name="euro" id="euro" value=0>
+
+        <p> <label for="dollar">Saisissez un montant en $</label></p>
+        <input type="text" name="dollar" id="dollar" value=0>
+        <p><button type="button" onclick="ma_fonction()">Submit</button></p>
+    </form>
+    <p id="ici"></p>
+    <script>
+        function ma_fonction() {
+            var euro, dollar, res, message;
+            euro = document.getElementById("euro").value;
+            dollar = document.getElementById("dollar").value;
+
+            if (euro > 0 && dollar == 0) {
+                res = parseFloat(euro) * 1.05;
+                message = euro + "€ = " + res + "$";
+                document.getElementById("ici").innerHTML = message; 
+            }
+
+            else if (euro == 0 && dollar > 0) {
+                res = parseFloat(dollar) * 0.95;
+                message = dollar + "$ = " + res + "€";
+                document.getElementById("ici").innerHTML = message;
+            }
+
+            document.getElementById("ds").reset();
+        } 
+    </script>-->
+
+</html>
