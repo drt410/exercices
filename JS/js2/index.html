@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="ici"></p>
+    <script>
+        var nb, message;
+        nb = prompt("Saisissez un nombre");
+        var euro = parseFloat(nb);
+        var dollar = euro * 1.05;
+        message = "la valeur en € est de " + euro + " en $ = " + dollar;
+        document.getElementById("ici").innerHTML = message;
+
+    </script>
+</body>
+
+</html>
